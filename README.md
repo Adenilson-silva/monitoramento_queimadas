@@ -1,5 +1,3 @@
-# monitoramento_queimadas_brasil
-
 # ETL e Análise de Dados
 ## Monitoramento de Queimadas no Brasil
 
