@@ -47,8 +47,11 @@ A segunda etapa do projeto consistiu na análise dos dados, com o objetivo de at
 #### 3ª Etapa - Visualização dos Dados
 Na terceira etapa do projeto, foi desenvolvido um painel para apresentar os dados referentes às queimadas ocorridas no bioma com maior quantidade de focos. Para a elaboração dos painéis, utilizou-se a ferramenta _Tableau_.
 
-
-
 ## Tecnologias utilizadas
 - Python
 - Tableau
+
+## Quem é o Autor?
+Leia meu resumo e me envie uma mensagem: https://www.linkedin.com/in/adenilson-silva/
+
+Vamos conversar...
