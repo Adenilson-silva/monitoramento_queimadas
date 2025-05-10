@@ -4,7 +4,7 @@
  
 ## Resultado
 #### 1ª Etapa - ETL dos dados
-Disponível <a href='https://github.com/Adenilson-silva/monitoramento_queimadas/blob/main/A%20-%20Extract%2C%20Transform%2C%20Load%20-%20ETL.ipynb' target="_blank"> aqui </a>. 
+Disponível <a href='https://github.com/Adenilson-silva/monitoramento_queimadas/blob/main/A%20-%20Extract%2C%20Transform%2C%20Load%20-%20ETL.ipynb'> aqui </a>. 
 
 
 #### 2ª Etapa - Análise do Dados 
