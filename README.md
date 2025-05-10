@@ -1,5 +1,5 @@
 # ETL e Análise de Dados
-## Monitoramento de Queimadas no Brasil
+## Monitoramento de Queimadas no Brasil entre os anos de 2003 a 2024
 
 
 <div align="center">
@@ -7,64 +7,45 @@
 </div>
 
 ## Sobre este Projeto 
-Os conjuntos de arquivos _shafiles_ aqui utilizados foram obtidos em: <a href='https://www.ide.df.gov.br/geoportal/' target="_blank">GeoPortal-DF</a>
+Os dados utilizados neste projeto são oficiais e foram obtidos em:
+- <a href='https://basedosdados.org/dataset/f06f3cdc-b539-409b-b311-1ff8878fb8d9?table=a3696dc2-4dd1-4f7e-9769-6aa16a1556b8' target="_blank">Portal Base de Dados</a>
+- <a href='https://www.ibge.gov.br/geociencias/informacoes-ambientais/estudos-ambientais/15842-biomas.html?=&t=downloads' target="_blank">Portal IBGE</a>
 
-https://drive.google.com/file/d/15a3yxATywAT9-q4xtWBGa8f8saD0lccL/view?usp=sharing
-https://public.tableau.com/app/profile/adenilson.as/viz/Final_tableau_17468196970450/Dashboard2?publish=yes
 
 ## Contextualização
-Este projeto é constituído de duas etapas:
+Este projeto é constituído de três etapas:
 
-#### 1 - ETL dos _Shapefiles_ para o Google BigQuery
-Nesta etapa do projeto, foi realizada a leitura de uma pasta contendo diversos conjuntos de arquivos <a href='https://desktop.arcgis.com/en/arcmap/latest/manage-data/shapefiles/what-is-a-shapefile.htm' target="_blank">_shapefile_</a>. A pasta apresentava uma organização hierárquica, que foi preservada no processo de ingestão dos dados no <a href='https://cloud.google.com/bigquery/docs/introduction?hl=pt-br' target="_blank">_Google BigQuery_</a>, a fim manter a categorização temática dos _shapefiles_. A seguir, apresenta-se uma breve descrição de cada etapa do processo de ETL:
+#### 1ª Etapa - ETL dos dados
+Nesta etapa do projeto, foi realizado o processo de ETL a partir dos dados armazenados no _Google BigQuery_, disponibilizados pelo Portal Base dos Dados. A seguir, detalham-se as etapas do processo:
 
-- **_Extract_**: Leitura dos arquivos _shapefile_.
-- **_Transform_**: Organização dos dados, adequando-os para o carregamento.
-- **_Load_**: Inserção dos dados no _Google BigQuery_, com a criação de uma única tabela para armazenamento dos dados.
-
-Segue a tabela criada no _Google BigQuery_ após o processo de ETL:
-<div align="center">
-  <img src="https://drive.google.com/uc?export=view&id=13SNtO5hh8YAuIGXHwtXkaGe5e1ZHFKxl" width="800">
-</div>
+- **_Extract_**: Extração dos dados diretamente da base no _Google BigQuery_.
+- **_Transform_**: Tratamento de valores ausentes e indevidamente negativos. Para a imputação de dados ausentes, foi utilizado arquivo no formato _shapefile_ contendo os biomas brasileiros, disponibilizado pelo IBGE.
+- **_Load_**: Os dados tratados foram salvos nos formatos <a href='https://www.databricks.com/br/glossary/what-is-parquet' target="_blank"> Parquet </a> e CSV para uso em análises futuras.
 
 
+#### 2ª Etapa - Análise do Dados 
+A segunda etapa do projeto consistiu na análise dos dados, com o objetivo de atender aos seguintes pontos:
 
-#### 2 - Gerador de Relatório Automático 
-Na segunda etapa do projeto, foi desenvolvido um sistema para geração automática de relatórios. Em suma, o sistema realiza a sobreposição dos dados geoespaciais armazenados no _Google BigQuery_ com as informações contidas em um _shapefile_ fornecido pelo usuário. A partir desse processo, é gerado um relatório (em formato HTML) que identifica as interferências existentes nas áreas delimitadas pelo _shapefile_.
+1 - Quantidade de queimadas por ano
 
-* **Informações do Sistema:**
-<div align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1cGcoa5cPPJCMp-JquWTNpIGVPjrw0V_Z" width="800">
-</div>
+2 - Quantidade de Registros de Queimadas por Bioma
 
-1 - Campo para selecionar o arquivo _shapefile_ (.shp) que será utilizado como base para a geração do relatório automático.
+3 - Quantidade de Registros de Queimadas por Unidade Federativa
 
-2 - Campo para selecionar onde será salvo o relatório em formato HTML (.html).
+4 - Quantidade de Registros de Queimadas por Classificação de Risco
 
-3 - Botão para gerar o relatório.
+5 - Quantidade de Registros de Queimadas por Estação do Ano
 
-<div align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1SB8QKZO28uz2LlqFkskuW3DERuIK6NFo" width="800">
-</div>
+6 - Quantidade de Registros de Queimadas por Mês
 
-4 - Campo para selecionar o arquivo _json_ que contêm as credenciais de acesso do _Google BigQuery_.
+7 - Os 10 Municípios com maior quantidade de queimadas
 
-5 - Campo para informar o nome do projeto no _Google BigQuery_.
-
-6 - Campo para informar o nome do dataset no _Google BigQuery_.
-
-3 - Campo para informar o nome do tabela no _Google BigQuery_.
+8 - Os 10 Municípios com maior quantidade de queimadas críticas
 
 
-* **Sistema em operação:**
-<div align="center">
-  <img src="https://drive.google.com/uc?export=view&id=17oddV7w475KfTUOxVoVim8P8EgkYgVAM" width="800">
-</div>
+#### 3ª Etapa - Visualização dos Dados
+Na terceira etapa do projeto, foi desenvolvido um painel para apresentar os dados referentes às queimadas ocorridas no bioma com maior quantidade de focos. Para a elaboração dos painéis, utilizou-se a ferramenta _Tableau_.
 
-* **Relatório gerado:**
-<div align="center">
-  <img src="https://drive.google.com/uc?export=view&id=11ZHkBbAY_tJB6ZP7957hVfIZTSKlGf4b" width="800">
-</div>
 
 
 ## Tecnologias utilizadas
