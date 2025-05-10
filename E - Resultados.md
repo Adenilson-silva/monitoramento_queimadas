@@ -3,5 +3,13 @@
 ### ADENILSON SILVA
  
 ## Resultado
-Os painéis desenvolvidos neste projeto podem ser visualizados [aqui](https://app.powerbi.com/view?r=eyJrIjoiMGM1ZmFkNjgtOGU5Yy00YTdlLWJlOTYtYmI2OTg2YmNlOTkyIiwidCI6ImQ4YmRlNjVhLTNkZWQtNDM0Ni05NTE4LTY3MDIwNGU2ZTE4NCIsImMiOjR9).
+#### 1ª Etapa - ETL dos dados
+Disponível <a href='https://github.com/Adenilson-silva/monitoramento_queimadas/blob/main/A%20-%20Extract%2C%20Transform%2C%20Load%20-%20ETL.ipynb' target="_blank"> aqui </a>. 
 
+
+#### 2ª Etapa - Análise do Dados 
+Disponível <a href='https://github.com/Adenilson-silva/monitoramento_queimadas/blob/main/B%20-%20An%C3%A1lise%20dos%20Dados.ipynb' target="_blank"> aqui </a>. 
+
+
+#### 3ª Etapa - Visualização dos Dados
+Disponível <a href='https://public.tableau.com/app/profile/adenilson.as/viz/Final_tableau_17468196970450/Dashboard2' target="_blank"> aqui </a>. 
