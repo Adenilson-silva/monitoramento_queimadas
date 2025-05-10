@@ -32,7 +32,8 @@ A segunda etapa do projeto consistiu na análise dos dados, com o objetivo de at
 
 3 - Quantidade de Registros de Queimadas por Unidade Federativa
 
-4 - Quantidade de Registros de Queimadas por Classificação de Risco
+4 - Quantidade de Registros de Queimadas por <a href='https://dataserver-coids.inpe.br/queimadas/queimadas/riscofogo_meteorologia/anuario_risco_de_fogo/anuario_risco_de_fogo_2023.pdf' target="_blank"> Classificação de Risco </a>
+
 
 5 - Quantidade de Registros de Queimadas por Estação do Ano
 
