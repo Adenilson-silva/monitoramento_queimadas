@@ -23,7 +23,7 @@ Nesta etapa do projeto, foi realizado o processo de ETL a partir dos dados armaz
 - **_Load_**: Os dados tratados foram salvos nos formatos <a href='https://www.databricks.com/br/glossary/what-is-parquet' target="_blank"> Parquet </a> e CSV para uso em análises futuras.
 
 
-#### 2ª Etapa - Análise do Dados 
+#### 2ª Etapa - Análise dos Dados 
 A segunda etapa do projeto consistiu na análise dos dados, com o objetivo de atender aos seguintes pontos:
 
 1 - Quantidade de queimadas por ano
