@@ -8,7 +8,7 @@ Disponível <a href='https://github.com/Adenilson-silva/monitoramento_queimadas/
 
 
 #### 2ª Etapa - Análise dos Dados 
-Disponível <a href='https://github.com/Adenilson-silva/monitoramento_queimadas/blob/main/B%20-%20An%C3%A1lise%20dos%20Dados.ipynb' target="_blank"> aqui </a>. 
+Disponível <a href='https://github.com/Adenilson-silva/monitoramento_queimadas/blob/main/B%20-%20An%C3%A1lise%20Explorat%C3%B3ria%20dos%20Dados.ipynb' target="_blank"> aqui </a>. 
 
 
 #### 3ª Etapa - Visualização dos Dados
