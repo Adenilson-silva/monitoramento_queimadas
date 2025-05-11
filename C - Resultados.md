@@ -7,7 +7,7 @@
 Disponível <a href='https://github.com/Adenilson-silva/monitoramento_queimadas/blob/main/A%20-%20Extract%2C%20Transform%2C%20Load%20-%20ETL.ipynb' target="_blank"> aqui </a>. 
 
 
-#### 2ª Etapa - Análise do Dados 
+#### 2ª Etapa - Análise dos Dados 
 Disponível <a href='https://github.com/Adenilson-silva/monitoramento_queimadas/blob/main/B%20-%20An%C3%A1lise%20dos%20Dados.ipynb' target="_blank"> aqui </a>. 
 
 
